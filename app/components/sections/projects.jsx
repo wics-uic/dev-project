@@ -1,4 +1,5 @@
 import FolderTab from "./folderTab"
+import Link from "next/link"
 
 export default function Projects() {
     return (
@@ -24,7 +25,7 @@ export default function Projects() {
             </div>
 
             <div>
-                <a className="bg-white p-3 shadow-xl cursor-pointer">view project gallery</a>
+                <Link className="bg-white p-3 shadow-xl cursor-pointer" href="/projects">view project gallery</Link>
             </div>
 
         </div>

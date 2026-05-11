@@ -2,9 +2,9 @@ import matter from 'gray-matter'
 import path from 'path'
 import fs from 'fs'
 
-export const getListOfPosts = () => {
+export const getListOfProjects = () => {
   // loop through list of md files 
-  const folder = path.join(process.cwd(), 'posts')
+  const folder = path.join(process.cwd(), 'DevProjects')
   const files = fs.readdirSync(folder) // returns array of file names
   const mdFiles = files.filter(file => file.endsWith('.md'))
 
@@ -23,8 +23,8 @@ export const getListOfPosts = () => {
   })
 }
 
-export const getPostContent = (slug) => {
-  const file = path.join(process.cwd(), 'posts', slug) + '.md'
+export const getProjectContent = (slug) => {
+  const file = path.join(process.cwd(), 'DevProjects', slug) + '.md'
   const content = fs.readFileSync(file, 'utf8')
   return matter(content) // separate the Markdown string into content and frontmatter.
 }
