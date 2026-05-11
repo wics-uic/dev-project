@@ -1,21 +1,17 @@
-import Link from "next/link";
-import Quote from "./components/sections/quote";
 import Hero from "./components/sections/hero"
+import Projects from "./components/sections/projects"
 import About from "./components/sections/about"
+import Apply from "./components/sections/apply"
 import Footer from "./components/sections/footer"
-import Pictures from "./components/sections/pictures"
-import Cohorts from "./components/sections/cohorts"
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-[#F8E0D8]">
+    <div className="">
       <Hero/>
+      <Projects/>
       <About/>
-      <Quote/>
-      <Pictures/>
-      <Cohorts/>
+      <Apply/>    
       <Footer/>
-      
     </div>
   );
 }
