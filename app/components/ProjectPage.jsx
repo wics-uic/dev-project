@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown"
-export default function ProjectPage() {
+export default function ProjectPage({content,data}) {
     return (
     <>
       <h1>{data.title}</h1>

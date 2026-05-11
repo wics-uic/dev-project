@@ -1,11 +1,9 @@
-export default function ProjectCard(name,date,description,img) {
+export default function ProjectCard({project}) {
     return (
-        <div className="h-200 w-80 bg-white rounded-tr-3xl rounded-b-3xl shadow-xl">
+        <div className="h-80 w-60 bg-white rounded-tr-3xl shadow-xl">
             <img/>
             <div id="text">
-                <p>{name}</p>
-                <p>{date}</p>
-                <p>{description}</p>
+                <p>{project.title}</p>
             </div>
         </div>
     )

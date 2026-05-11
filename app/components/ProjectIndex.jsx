@@ -1,13 +1,15 @@
 import Link from "next/link"
+import ProjectCard from "./ProjectCard"
 
-function PageIndex({ posts }) {
+function ProjectIndex({ projects }) {
+    console.log(projects)
   return (
-    <section>
+    <section className="m-auto grid grid-cols-4 gap-4">
       {
-        posts.map(post => (
-          <article key={post.slug}>
-            <Link href={`blog/${post.replace('.md', '')}`}>
-              {post.title}
+        projects.map(project => (
+          <article key={project.slug}>
+            <Link href={`projects/${project.slug}`} className="text-black">
+              <ProjectCard project={project}/>
             </Link>
           </article>
         ))
@@ -16,4 +18,4 @@ function PageIndex({ posts }) {
   )
 }
 
-export default BlogIndex
+export default ProjectIndex
