@@ -25,9 +25,9 @@ export default function About() {
       
         <div
         id="blue-container"
-        className="p-2 justify-center shadow-lg m-auto h-150 w-100 md:ml-20 md:w-120 bg-[#BBCCF7] z-999"
+        className="p-2 justify-center shadow-[0_5px_5px_rgba(0,0,0,0.50)] m-auto h-150 w-100 md:ml-20 md:w-120 bg-[#BBCCF7] z-30"
       >
-        <div id="yellow-container" className="justify-center flex flex-col p-5 shadow-lg h-150 w-100 md:w-120  bg-white z-999">
+        <div id="yellow-container" className="justify-center flex flex-col p-5 shadow-[0_5px_5px_rgba(0,0,0,0.50)] h-150 w-100 md:w-120  bg-white z-999">
           <h1 className="font-bold text-4xl">ABOUT</h1>
           <p>
             The WiCS: Wired Dev Project is a .... This is about our website.

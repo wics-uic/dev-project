@@ -3,13 +3,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* These variables should match the 'variable' names in your layout.js */
+  --font-pixelify: "Pixelify Sans", cursive;
+  --font-host: "Host Grotesk", sans-serif;
+  --font-hiragino: "Hiragino Kaku Gothic Std", "MS PGothic", sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Map your custom fonts to Tailwind utilities */
+  --font-pixel: var(--font-pixelify);
+  --font-host: var(--font-host);
+  --font-hira: var(--font-hiragino);
+  
+  /* This sets the default sans font for the whole site */
+  --font-sans: var(--font-host); 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +33,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* This ensures Host Grotesk is the default text font */
+  font-family: var(--font-host);
+}
+
+h1, h2 {
+  font-family: var(--font-hira);
 }

@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Pixelify_Sans, Host_Grotesk } from "next/font/google";
+import localFont from "next/font/local"
 import "./globals.css";
+
+const pixelify = Pixelify_Sans({
+  subsets: ['latin'],
+  variable: '--font-pixelify', // This creates a CSS variable
+});
+
+const hostGrotesk = Host_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-host',
+});
+
+const hiragino = localFont({
+  src: '../public/fonts/Hiragino-Kaku-Gothic-Std-W8.otf', // Path to your file
+  variable: '--font-hira', // The CSS variable name
+  display: 'swap',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +42,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F8E0D8]`}
+        className={`${pixelify.variable} ${hostGrotesk.variable} ${hiragino.variable} antialiased bg-[#F8E0D8]`}
       >
         {children}
       </body>
     </html>
   );
 }
+
+
+// ${hiragino.variable} 
