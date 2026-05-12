@@ -9,9 +9,9 @@ export default function Hero() {
             <h1 className="font-bold text-5xl md:text-7xl lg:text-9xl">DEV PROJECT</h1>
             <div id="hero-nav" className="header-bottom">
                 <ul className="text-2xl flex flex-col md:gap-5 md:flex-row">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#apply">APPLY</a></li>
+                    <li><a href="#about" className="hover:underline">ABOUT</a></li>
+                    <li><a href="#projects" className="hover:underline">PROJECTS</a></li>
+                    <li><a href="#apply" className="hover:underline">APPLY</a></li>
                 </ul>
             </div>
             </div>
