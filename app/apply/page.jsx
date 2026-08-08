@@ -20,9 +20,10 @@ export default function Apply() {
     interests: [],
     skills: {
       git: 3,
+      html: 3,
+      css: 3,
+      javascript: 3,
       react: 3,
-      tailwind: 3,
-      node: 3
     },
     reason: ""
   });
@@ -62,7 +63,7 @@ export default function Apply() {
           <Link href="/">Return to Home</Link>
         </div> */}
         <h1 className="font-bold text-7xl mb-2">APPLY</h1>
-        <p className="text-xl md:mb-12">The WiCS: Wired Dev Project</p>
+        <p className="text-xl md:mb-5">The WiCS: Wired Dev Project</p>
         
         <div className="hidden md:block w-full max-w-md">
           <h2 className="font-bold text-3xl mb-6 border-b border-white/30 pb-2">FAQ</h2>
@@ -139,7 +140,7 @@ export default function Apply() {
             <div className="h-px bg-gray-200 mb-4" />
             
             <div className="grid grid-cols-2 gap-3">
-              {['Frontend', 'Backend', 'UI/UX Design', 'DevOps', 'Mobile', 'AI/ML'].map((item) => (
+              {['Frontend', 'Backend', 'UI/UX Design', 'DevOps', 'Project Management', 'Not sure yet'].map((item) => (
                 <label key={item} className={`
                   flex items-center justify-center p-3 border-2 rounded-xl cursor-pointer transition-all
                   ${formData.interests?.includes(item) 

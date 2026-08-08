@@ -1,4 +1,5 @@
 import Hero from "./components/sections/hero"
+import PostHero from "./components/sections/postHero"
 import Projects from "./components/sections/projects"
 import About from "./components/sections/about"
 import Apply from "./components/sections/apply"
@@ -10,8 +11,9 @@ export default function Home() {
     <div className="">
       <NavBar/>
       <Hero/>
-      <Projects/>
+      <PostHero/>
       <About/>
+      <Projects/>
       <Apply/>    
       <Footer/>
     </div>

@@ -20,7 +20,7 @@ export default function FolderTab({name,link,active,type, onClick}) {
         style={{backgroundColor: background}}
         onClick={onClick}
         >
-            <p className="font-bold">{link}</p>
+            <p className="">{link}</p>
         </div>
     )
 }

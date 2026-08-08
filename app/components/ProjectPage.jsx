@@ -33,9 +33,9 @@ export default function ProjectPage({ content, data }) {
                 <h1 className="text-5xl font-bold text-[#4B5659]">{finalTitle}</h1>
                 <p className="text-3xl">{data.date}</p>
                 <p>{data.description}</p>
-                <div className="flex gap-10">
-                  <a href={data.github} target="_blank" rel="noreferrer">GitHub Repository</a>
-                  <a href={data.siteUrl} target="_blank" rel="noreferrer">Deployed Website</a>
+                <div className="flex gap-10 font-bold">
+                  <a href={data.github} target="_blank" rel="noreferrer">⚙️ GitHub Repository</a>
+                  <a href={data.siteUrl} target="_blank" rel="noreferrer">🔗 Deployed Website</a>
                 </div>
                 
                 <div>
