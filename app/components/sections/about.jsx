@@ -4,7 +4,10 @@ import AboutImages from "./aboutImages.jsx";
 export default function About() {
   return (
     // <div id="about" className="overflow-clip flex w-full items-center min-h-screen bg-[#FBF2D8]">
-    <div id="about" className="overflow-clip flex w-full items-center min-h-screen bg-[url(/projectPhotos/background/postHero.png)] bg-cover">
+    <div id="about" className="overflow-clip flex w-full items-center min-h-screen bg-[url(/background/about.png)] bg-cover">
+      
+      
+      
       <div
         id="tile-background"
         className="hidden max-h-screen overflow-hidden md:grid md:grid-cols-3 gap-5 absolute right-0 z-0"

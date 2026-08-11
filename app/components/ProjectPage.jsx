@@ -13,7 +13,7 @@ export default function ProjectPage({ content, data }) {
         <div>
           <div className="md:ml-5 flex z-0">
             <FolderTab name={finalTitle} active="true" type="main" />
-            <FolderTab name="comments" active="false" type="main" />
+            {/* <FolderTab name="comments" active="false" type="main" /> */}
             <FolderTab link="/projects" name="back to projects" active="false" type="main" />
           </div>
           <div className="z-50 flex flex-col bg-[#FFE9AD] p-15 min-h-175  bottom-0">
@@ -31,21 +31,21 @@ export default function ProjectPage({ content, data }) {
 
               <div className="flex flex-col gap-5 ml-5">
                 <h1 className="text-5xl font-bold text-[#4B5659]">{finalTitle}</h1>
-                <p className="text-3xl">{data.date}</p>
+                <p className="text-3xl">{data.cohort}</p>
                 <p>{data.description}</p>
                 <div className="flex gap-10 font-bold">
                   <a href={data.github} target="_blank" rel="noreferrer">⚙️ GitHub Repository</a>
                   <a href={data.siteUrl} target="_blank" rel="noreferrer">🔗 Deployed Website</a>
                 </div>
                 
-                <div>
+                {/* <div>
                   <p className="font-bold text-2xl">FEATURES</p>
                   <ul className="list-disc ml-5">
                     <li>feature #1</li>
                     <li>feature #1</li>
                     <li>feature #1</li>
                   </ul>
-                </div>
+                </div> */}
                 <div>
                   <p className="font-bold text-2xl mb-3">TOOLS</p>
                   <ul className="flex flex-wrap gap-2">

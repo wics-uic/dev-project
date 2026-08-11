@@ -1,7 +1,8 @@
 import Link from "next/link"
 export default function Apply() {
     return (
-        <div id="apply" className="flex justify-center items-center min-h-screen  bg-[url(/projectPhotos/background/apply.png)] bg-cover">
+        <div id="apply" className="flex justify-center items-center min-h-screen  bg-[url(/background/apply.png)] bg-cover">
+            
             <div className="bg-white h-60 w-90 md:w-200 md:h-100 shadow-[0_5px_5px_rgba(0,0,0,0.50)] flex flex-col gap-3 text-center justify-center">
                 <img className="ml-auto mr-auto max-w-10 md:max-w-70" src="heart.svg" />
                 <h1 className="text-[#21376D] font-bold text-xl md:text-4xl">Ready to start building?</h1>

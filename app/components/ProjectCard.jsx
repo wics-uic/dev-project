@@ -6,7 +6,7 @@ export default function ProjectCard({project}) {
             <div id="text" className="flex flex-col">
                 <div className="flex justify-between">
                     <p className="font-bold">{finalTitle}</p>
-                    <p>{project.date}</p>
+                    <p>{project.cohort}</p>
                 </div>
                 <p>{project.description}</p>
                 

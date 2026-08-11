@@ -8,8 +8,9 @@ import { useState } from "react"
 export default function Projects() {
      const [activeTab, setActiveTab] = useState("...")
 
-     const tabs = ["...","course bits","wics","sweet t"]
+    //  const tabs = ["...","course bits","wics","sweet t"]
 
+    const tabs = ["..."]
     const handleClick = (e) => {
         console.log(e.target);
         setActiveTab(e.target);
@@ -18,7 +19,7 @@ export default function Projects() {
 
 
     return (
-        <div id="projects" className="gap-10 min-h-screen w-full bg-[url(/projectPhotos/background/projects.png)] bg-cover flex flex-col justify-center items-center">
+        <div id="projects" className="gap-10 min-h-screen w-full bg-[url(/background/projects.png)] bg-cover flex flex-col justify-center items-center">
             <div id="folder-container" className="flex flex-col justify-center items-center">
                 <div>
                     <ul className="flex flex-row min-w-full w-100 md:w-170 ">
