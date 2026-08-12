@@ -207,6 +207,9 @@ export default function Apply() {
             </div>
           </section>
 
+          <h1>please confirm you can commit 1-2 hours of work in addition to weekly meetings</h1>
+          <h1>please confirm you can commit to the weekly meeting time of monday @ 3 pm</h1>
+
           <button 
             type="submit" 
             className="cursor-pointer bg-[#ECB0B9] hover:bg-[#d99ba4] transition-colors font-bold py-3 px-6 rounded-full text-white shadow-[0_5px_5px_rgba(0,0,0,0.50)] mt-4"

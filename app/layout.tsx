@@ -16,7 +16,7 @@ const hiragino = localFont({
 });
 
 const pixelify = localFont({
-  src: '../public/fonts/pixelify.ttf', 
+  src: '../public/fonts/Pixelify.ttf', 
   variable: '--font-pixelify', 
   display: 'swap',
 });
