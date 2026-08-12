@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
+/* -------- CUSTOM ANIMATIONS -------- */
+
+@keyframes pulse-bounce {
+    0%, 100% {
+      transform: translateY(-5%) scale(0.95);
+      opacity: 0.8;
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0) scale(1.05);
+      opacity: 1;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .animate-pulse-bounce {
+    animation: pulse-bounce 5s infinite;
+  }
+
 @keyframes bounce-small {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
+  50% { transform: translateY(-10px); }
 }
 
 .animate-bounce-small {
@@ -11,12 +30,14 @@
 
 @keyframes bounce-small-delay {
   0%, 100% { transform: translateY(0); }
-  70% { transform: translateY(-4px); }
+  70% { transform: translateY(-8px); }
 }
 
 .animate-bounce-small-delay {
   animation: bounce-small-delay 3s ease-in-out infinite;
 }
+
+/* --------------------------- */
 
 :root {
   --background: #ffffff;

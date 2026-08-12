@@ -7,7 +7,7 @@ export default function Footer() {
       <div id="top-section" className="max-h-fit flex flex-col md:flex-row">
         <div className="max-h-100 p-0 flex flex-col align-middle items-center justify-center">
           <img src="flori.png" />
-          <div className="text-center relative -top-31.25 md:-top-50">
+          <div className="text-center relative -top-31.25 lg:-top-50">
             <h1><b>Flori Che</b></h1>
           <p>CS '27</p>
           </div>
@@ -16,7 +16,7 @@ export default function Footer() {
 
         <div className="max-h-100 p-0 flex flex-col align-middle items-center justify-center">
           <img src="zeel.png" />
-          <div className="text-center relative -top-31.25 md:-top-50">
+          <div className="text-center relative -top-31.25 lg:-top-50">
             <h1><b>Zeel Patel</b></h1>
             <p>CS '27</p>
           </div>
@@ -31,8 +31,8 @@ export default function Footer() {
           <div id="left-container">
             <p className="text-3xl md:text-6xl font-bold">WiCS: Wired</p>
             <p className="max-w-100">
-              No experience required. We welcome all students who are passionate
-              about building.
+              Questions? Reach out to us on Discord in the 
+              <br/>#dev-channel server.
             </p>
           </div>
 
@@ -58,9 +58,9 @@ export default function Footer() {
         <div className="bg-white w-full h-[0.5] mt-5 mb-5" />
 
         <div id="bottom" className="flex justify-between">
-          <p>2026 WiCS Technical Project</p>
+          <p>No experience needed! All are welcome.</p>
 
-          <p className="hidden md:block">2026 WiCS Technical Project</p>
+          <p className="hidden md:block">est. 2024 WiCS Technical Project</p>
         </div>
       </div>
     </div>

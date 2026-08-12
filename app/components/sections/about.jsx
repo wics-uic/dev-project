@@ -4,7 +4,7 @@ import AboutImages from "./aboutImages.jsx";
 export default function About() {
   return (
     // <div id="about" className="overflow-clip flex w-full items-center min-h-screen bg-[#FBF2D8]">
-    <div id="about" className="overflow-clip flex w-full items-center min-h-screen bg-[url(/background/about.png)] bg-cover">
+    <div id="about" className="relative overflow-clip flex w-full items-center min-h-screen bg-[url(/background/about.png)] bg-cover">
       
       
       
@@ -32,7 +32,7 @@ export default function About() {
         className="p-2 justify-center shadow-[0_5px_5px_rgba(0,0,0,0.50)] m-auto h-150 w-100 md:ml-20 md:w-120 bg-[#BBCCF7] z-30"
       >
         <div id="yellow-container" className="justify-center flex flex-col gap-2 p-5 shadow-[0_5px_5px_rgba(0,0,0,0.50)] h-150 w-100 md:w-120  bg-white z-999">
-          <h1 className="font-bold text-4xl">ABOUT</h1>
+          <h1 className="font-bold text-4xl"><a href="/about">ABOUT</a></h1>
           <p className="text-xs md:text-base">
 
             <b>The WiCS: Wired Dev Project</b> is a student-led initiative at UIC designed to bridge the gap between classroom theory and real-world software engineering. While CS courses teach you the logic, we provide the environment to actually build, break, and deploy something from scratch.
@@ -51,8 +51,8 @@ export default function About() {
           </p>
         </div>
         </div>
-      
       <AboutImages/>
+
       
     </div>
   );

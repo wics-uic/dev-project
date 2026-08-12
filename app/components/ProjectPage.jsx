@@ -8,7 +8,7 @@ export default function ProjectPage({ content, data }) {
 
   return (
     <>
-      <div className="flex flex-col bg-[#B0C4B2] min-h-screen">
+      <div className="flex flex-col bg-linear-to-r from-[#FFEAB0] via-[#F4919B] to-[#F6B9BA]  min-h-screen">
         <div className="h-10"></div>
         <div>
           <div className="md:ml-5 flex z-0">

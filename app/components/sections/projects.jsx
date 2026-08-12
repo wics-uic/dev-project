@@ -19,7 +19,7 @@ export default function Projects() {
 
 
     return (
-        <div id="projects" className="gap-10 min-h-screen w-full bg-[url(/background/projects.png)] bg-cover flex flex-col justify-center items-center">
+        <div id="projects" className="relative gap-10 min-h-screen w-full bg-[url(/background/projects.png)] bg-cover flex flex-col justify-center items-center">
             <div id="folder-container" className="flex flex-col justify-center items-center">
                 <div>
                     <ul className="flex flex-row min-w-full w-100 md:w-170 ">
@@ -51,6 +51,10 @@ export default function Projects() {
             <div>
                 <Link className="bg-white p-3 shadow-[0_5px_5px_rgba(0,0,0,0.50)] cursor-pointer" href="/projects">view project gallery</Link>
             </div>
+
+             <img src="bigpinkstar.svg" className="absolute animate-pulse-bounce top-0 md:-left-50 md:-bottom-40"/>
+            <img src="pinkstar.svg" width="150px" className="absolute animate-bounce-small hidden md:left-10 md:bottom-60"/>
+            <img src="whitestar.png" className="absolute animate-bounce-small-delay -bottom-50 right-0 md:bottom-0 "/>
 
         </div>
     )

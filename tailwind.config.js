@@ -7,6 +7,9 @@ module.exports = {
         host: ['var(--font-host)', 'sans-serif'],
         hira: ['var(--font-hiragino)', 'sans-serif'],
       },
+      screens: {
+        'md': '900px'
+      }
     },
   },
 };

@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard"
 function ProjectIndex({ projects }) {
     console.log(projects)
   return (
-    <section className="m-auto grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-6">
+    <section className="m-auto grid lg:grid xl:grid-cols-4 gap-6">
       {
         projects.map(project => (
           <article key={project.slug}>

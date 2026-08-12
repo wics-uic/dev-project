@@ -10,7 +10,7 @@ export default function ProjectsPage() {
   const projects = getListOfProjects();
   return (
     
-    <div className="flex flex-col bg-[#B0C4B2] min-h-screen">
+    <div className="flex flex-col bg-linear-to-r from-[#FFEAB0] via-[#F4919B] to-[#F6B9BA] min-h-screen">
       <NavBar/>
       <div className="h-10"></div>
       <div>
