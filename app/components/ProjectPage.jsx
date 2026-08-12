@@ -20,12 +20,12 @@ export default function ProjectPage({ content, data }) {
             <div id="content" className="grid grid-cols-1 gap-10 lg:grid-cols-2">
               <div
                 id="image"
-                className="flex bg-white w-100 h-75 md:w-150 md:min-h-100 m-auto shadow-[0_5px_5px_rgba(0,0,0,0.50)]"
+                className="flex bg-white w-100 h-75 lg:w-150 lg:min-h-100 m-auto shadow-[0_5px_5px_rgba(0,0,0,0.50)]"
               >
                 <img 
                   src={data.slideshow?.[0]?.image || data.image} 
                   alt={data.title}
-                  className="w-full h-full object-contain p-4"
+                  className="lg:w-full h-full object-contain p-4"
                 />
               </div>
 
