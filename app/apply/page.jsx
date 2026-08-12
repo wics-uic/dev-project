@@ -56,6 +56,12 @@ export default function Apply() {
   };
 
   const handleSubmit = async (e) => {
+
+    if (!formData.email.toLowerCase().endsWith('@uic.edu')) {
+      setSubmitStatus('error');
+      return; 
+    }
+
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -153,6 +159,8 @@ export default function Apply() {
                 <input 
                   className="border-2 border-gray-100 rounded-lg p-2 focus:border-[#ECB0B9] outline-none transition-all"
                   type="email" name="email" value={formData.email} onChange={handleChange} required 
+                  pattern=".+@uic\.edu" 
+                  title="Please provide a valid @uic.edu email address"
                 />
               </div>
 
